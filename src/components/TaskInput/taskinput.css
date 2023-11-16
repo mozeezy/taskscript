@@ -1,0 +1,13 @@
+.taskinput__container {
+  padding: 0.5rem;
+  width: 40%;
+}
+
+.textfield__form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textfield__input {
+  width: 60%;
+}
