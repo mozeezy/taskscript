@@ -1,15 +1,15 @@
-import * as React from 'react';
-import './App.css';
-import TextField from './components/TaskInput/TaskInput';
+import React, { useState } from "react";
+import "./App.css";
+import TaskInput from "./components/TaskInput/TaskInput";
 
-
-const App:React.FC = () => {
+const App: React.FC = () => {
+  const [task, setTask] = useState<string>("");
   return (
     <div className="App">
       <h1 className="web__title">TaskScript</h1>
-      <TextField></TextField>
+      <TaskInput task={task} setTask={setTask}></TaskInput>
     </div>
   );
-}
+};
 
 export default App;

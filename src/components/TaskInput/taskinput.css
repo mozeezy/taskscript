@@ -11,3 +11,13 @@
 .textfield__input {
   width: 60%;
 }
+
+@media screen and (max-width: 800px) {
+  .textfield__form {
+    flex-direction: column;
+  }
+
+  .textfield__input {
+    bottom: 1rem;
+  }
+}
