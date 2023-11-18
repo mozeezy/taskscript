@@ -7,12 +7,13 @@ import "./taskinput.css";
 interface Props {
   task: string;
   setTask: React.Dispatch<React.SetStateAction<string>>;
+  submitTask: (event: React.FormEvent) => void;
 }
 
-const TaskInput = ({ task, setTask }: Props) => {
+const TaskInput = ({ task, setTask, submitTask }: Props) => {
   return (
     <Box className="taskinput__container">
-      <form className="textfield__form">
+      <form className="textfield__form" onSubmit={submitTask}>
         <TextField
           id="standard-basic"
           label="Enter a task"
