@@ -17,8 +17,6 @@ const App: React.FC = () => {
     }
   };
 
-  console.log(tasks);
-
   return (
     <div className="App">
       <h1 className="web__title">TaskScript</h1>

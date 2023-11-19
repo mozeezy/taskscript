@@ -1,0 +1,23 @@
+.task__list__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.task__card {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .task__list__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-content: center;
+  }
+}
