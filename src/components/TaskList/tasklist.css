@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 90%;
+  margin-top: 1rem;
 }
 
 .task__card {
@@ -15,9 +16,9 @@
 
 @media screen and (max-width: 600px) {
   .task__list__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    align-content: center;
+    width: 100%;
+  }
+  .task__card {
+    width: 50%;
   }
 }

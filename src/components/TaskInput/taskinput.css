@@ -19,5 +19,6 @@
 
   .textfield__input {
     bottom: 1rem;
+    width: 100%;
   }
 }
