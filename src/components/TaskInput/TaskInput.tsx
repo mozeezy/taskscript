@@ -15,6 +15,7 @@ const TaskInput = ({ task, setTask, submitTask }: Props) => {
     <Box className="taskinput__container">
       <form className="textfield__form" onSubmit={submitTask}>
         <TextField
+          required
           id="standard-basic"
           label="Enter a task"
           variant="standard"
