@@ -11,6 +11,8 @@ interface Props {
 }
 
 const TaskList = ({ tasks, setTasks }: Props) => {
+  const completeTask = () => {};
+
   return (
     <div className="task__list__container">
       {tasks.map((task) => (
