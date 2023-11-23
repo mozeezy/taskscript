@@ -14,6 +14,10 @@
   margin-bottom: 1rem;
 }
 
+.task__icons {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .task__list__container {
     width: 100%;
