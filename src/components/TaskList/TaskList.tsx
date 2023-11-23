@@ -20,6 +20,10 @@ const TaskList = ({ tasks, setTasks }: Props) => {
     );
   };
 
+  const deleteTask = (id: number) => {
+    setTasks(tasks.filter((task) => task.id !== id));
+  };
+
   return (
     <div className="task__list__container">
       {tasks.map((task) => (
@@ -38,7 +42,7 @@ const TaskList = ({ tasks, setTasks }: Props) => {
               />
             )}
 
-            <MdDelete />
+            <MdDelete onClick={() => deleteTask(task.id)} />
           </div>
         </Paper>
       ))}
